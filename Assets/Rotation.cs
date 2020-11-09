@@ -25,7 +25,6 @@ public class Rotation : MonoBehaviour
     void Update()
     {
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
-        print(inputAxis.x);
         if(inputAxis.x < -0.3)
             this.transform.RotateAround(camera.transform.position, Vector3.up, -Mathf.Abs(snapIncrement));
         if (inputAxis.x > 0.3)

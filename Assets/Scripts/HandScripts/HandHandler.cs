@@ -10,6 +10,8 @@ public class HandHandler : MonoBehaviour
     [SerializeField] private InputDeviceCharacteristics deviceCharacteristics;
     [SerializeField] private GameObject HandModel;
     private GameObject spawnedHand;
+    [SerializeField] private float PickUpRadius;
+    [SerializeField] private LayerMask ItemLayer;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +27,6 @@ public class HandHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (device.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > 0.9f)
-        {
-            Debug.Log("Trigger button is pressed.");
-        }
     }
 }
+

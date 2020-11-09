@@ -46,3 +46,7 @@ MonoBehaviour:
   deviceCharacteristics: 320
   HandModel: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b,
     type: 3}
+  PickUpRadius: 0.1
+  ItemLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
